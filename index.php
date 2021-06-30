@@ -31,7 +31,7 @@
             echo "Caso Uno";
             break;
         case 2:
-            echo "Caso Dos";
+            echo "Caso tres";
             break;
         case 3:
             echo "Caso Tres";
