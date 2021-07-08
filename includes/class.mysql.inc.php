@@ -99,17 +99,10 @@ class class_mysql
 		return $bd->query($sql);
 	}
 
-	function insertar1($t, $p, $h, $f)
-	{
-		$bd = new class_mysql();
-		$sql = "INSERT INTO almacenes (id, Tienda, Ventas,Fecha) VALUES (NULL, '" . $t . "', '" . $p . "', '" . $f . "')";
-		return $bd->query($sql);
-	}
-
 	function listar()
 	{
-		$bd = new class_mysql();
-		$sql = "SELECT  * FROM Datos";
+		$bd = $this->connect();
+		$sql = "SELECT * FROM Datos";
 		echo $sql;
 		return $bd->query($sql);
 		
